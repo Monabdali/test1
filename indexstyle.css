@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: left;
+  padding: 20px;
+}
+
+/* Video container style */
+.video-container {
+  position: relative;
+}
+
+/* Styling for the video */
+video {
+  width: 100%;
+  max-height: 90vh;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+}
+
+/* Styling for the heading on the video */
+.video-container h1 {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6vw; /* Adjust font size relative to the viewport width */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: text-shadow 0.3s ease-in-out; /* Use text-shadow for better performance */
+}
+
+.video-container h1:hover {
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8); /* Adjust shadow on hover */
+}
+
+/* Navigation bar styling */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  display: block;
+  padding: 15px;
+  color: black;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Styling for the services section */
+#services {
+  padding: 10px; /* Adjust the padding as needed */
+  text-align: center;
+}
+
+.services-buttons {
+  display: flex;
+  justify-content: space-around; /* Center buttons with equal spacing */
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line on small screens */
+}
+
+.services-buttons button {
+  position: relative;
+  margin: 5px;
+  border: none;
+  overflow: hidden;
+  flex: 0 0 400px; /* Set a fixed width for each button */
+}
+
+.services-buttons button img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.services-buttons button:hover img {
+  transform: scale(1.1);
+}
+
+.button-text {
+  font-size: 2vw; /* Adjust font size relative to the viewport width */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.services-buttons button:hover .button-text {
+  opacity: 1;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .services-buttons {
+    flex-direction: column; /* Display buttons in a column on smaller screens */
+    align-items: center; /* Center buttons on smaller screens */
+  }
+  
+  .services-buttons button {
+    max-width: 100%; /* Set full width for buttons on smaller screens */
+  }
+}
+
+
+footer {
+  padding: 20px;
+}
+

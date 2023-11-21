@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to the stylesheet for the page -->
+  <link rel="stylesheet" href="indexstyle.css">
+</head>
+
+<body>
+
+  <!-- Video background -->
+  <div class="video-container">
+    <video autoplay muted loop>
+      <source src="tudevid.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Heading on the video -->
+    <h1>Tude Salon</h1>
+
+    <!-- Navigation bar -->
+    <ul>
+      <li><a href="index.html"><b>Home</b></a></li>
+      <li><a href="store.html"><b>OurTeam</b></a></li>
+      <li><a href="team.html"><b>Store</b></a></li>
+      <li style="float:right"><a href="sign.html">sign in</a></li>
+    </ul>
+  </div>
+
+  <!-- Services section -->
+  <section id="services">
+    <h2>Our Services</h2>
+
+    <div class="services-buttons">
+      <button onclick="location.href='#hair'">
+        <img src="pexels-cottonbro-studio-3993462.jpg" alt="Hair Image">
+        <span class="button-text">Hair</span></button>
+
+      <button onclick="location.href='#body'">
+        <img src="pexels-monstera-production-6621151.jpg" alt="Body Care Image">
+        <span class="button-text">Body</span></button>
+
+      <button onclick="location.href='nails.html'">
+        <img src="pexels-cottonbro-studio-3997391.jpg" alt="Nails Care Image">
+        <span class="button-text">Nails</span></button>
+    </div>
+  </section>
+
+
+    <section id="location">
+        <h2>Our Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.940359286314!2d36.5225725!3d28.4512142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15a9b1d6154fb977%3A0x3804cec5a946e00e!2z2KzYp9mF2LnYqSDYqtio2YjZgyDZgdix2Lkg2KfZhNmF2LXZitmB!5e0!3m2!1sen!2ssa!4v1699875329330!5m2!1sen!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section><br><br>
+
+    <footer>
+    <form action="/action_page.php">
+     <fieldset>
+     <legend>Contact us</legend>
+     <label for="f1">Name:</label>
+     <input type="text" id="f1" name="f1" placeholder="Mona Abdali"><br>
+     <label for="f2">Email:</label>
+     <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+     <textarea name="message" rows="10" cols="50">write your message here
+           </textarea><br><br>
+     <button type="submit">send</button><br>
+</form>
+</fieldset>
+    </footer>
+
+
+</body>
+
+</html>
+
